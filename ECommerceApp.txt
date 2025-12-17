@@ -114,8 +114,7 @@ eksctl utils associate-iam-oidc-provider \
     --region us-east-1 \
     --cluster kastro-eks \
     --approve \
-    --cluster kastro-eks \
-    --approve
+   
 
 The above command is crucial when setting up an EKS cluster because it enables IAM roles for service accounts (IRSA)
 Amazon EKS uses OpenID Connect (OIDC) to authenticate Kubernetes service accounts with IAM roles.
@@ -825,6 +824,7 @@ pipeline {
 
 To access the App, we need to get the Load Balancer URL
 kuetl get all -n webapps
+
 
 
 
