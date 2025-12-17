@@ -110,8 +110,7 @@ Goto EKS Console and verify the cluster.
 
 (b)
 eksctl utils associate-iam-oidc-provider \
-    --region eksctl utils associate-iam-oidc-provider \
-    --region us-east-1 \
+    --region ap-south-1 \
     --cluster kastro-eks \
     --approve \
    
@@ -824,6 +823,7 @@ pipeline {
 
 To access the App, we need to get the Load Balancer URL
 kuetl get all -n webapps
+
 
 
 
