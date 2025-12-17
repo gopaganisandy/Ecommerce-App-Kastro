@@ -100,9 +100,9 @@ eksctl version
 Execute the below commands as separate set
 (a)
 eksctl create cluster --name=kastro-eks \
-                      --region=us-east-1 \
-                      --zones=us-east-1a,us-east-1b \
-                      --version=1.30 \
+                      --region=ap-south-1 \
+                      --zones=ap-south-1a,ap-south-1b \
+                      --version=1.34 \
                       --without-nodegroup
 
 It will take 5-10 minutes to create the cluster
@@ -822,4 +822,5 @@ pipeline {
 
 To access the App, we need to get the Load Balancer URL
 kuetl get all -n webapps
+
 
